@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+div.content{
+	position : relative;
+	float : left;
+	width : 180px;
+	height : 280px;
+	margin : 10px 6px;
+	text-align: center;
+}
+
+body div.content:nth-last-child(3){
+	margin : 10px 0 10px 8.5px;
+}
+
+body div.content:nth-last-child(2){
+	margin : 10px 8.5px;
+}
+
+body div.content:last-child{
+	margin : 10px 8.5px 10px 0;
+}
+
+img.content_img{
+	width : 180px;
+	height : 120px;
+	margin-bottom : 10px;
+	border-radius: 5px;
+}
+
+div.content_text{
+	width : 160px;
+	padding : 10px;
+	height : 70px;
+	margin-bottom : 20px;
+	text-align : left;
+	font-family : introcont;
+	font-size : 16px;
+}
+
+input.btn{
+	width : 80px;
+	height : 30px;
+	font-family: introcont;
+	font-size : 15px;
+	color : white;
+	background : #64ABD1;
+	border-radius: 5px;
+	border-style : none;
+	cursor : pointer;
+}
+
+input.btn:hover{
+	transition : background 0.5s ease;
+	background : rgba(32, 86, 172, 0.96);
+}
+
+@font-face {
+    font-family: introHead;
+    src: url('../../font/BMDOHYEON_ttf.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: introcont;
+    src: url('../../font/BMJUA_ttf.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: logo;
+    src: url('../../font/210 앱굴림B.ttf') format('truetype');
+}

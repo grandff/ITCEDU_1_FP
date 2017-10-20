@@ -1,0 +1,122 @@
+
+/* .top .tooltip{
+        visibility: hidden;
+        width: 200px;
+        background: silver;
+        color: black;
+        text-align: center;
+        padding: 5px 0;
+        z-index: 1;
+        position: absolute;
+        margin-left: -420px;
+        z-index: 1;
+    }
+    .top .tooltip::after{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left:100%;
+        bottom: 100%;
+        border-style: solid;
+        border-color: transparent transparent transparent silver;
+        border-width: 20px;
+    }
+    .top:hover .tooltip{
+        visibility: visible;
+    }
+    .top:hover{
+        cursor: pointer;
+    } */
+#wrapper{
+	width: 980px;
+	height: 1080px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+div.top{
+	padding-left : 30px;
+	padding-bottom : 10px;
+	height: 160px;
+	margin: 0 auto;
+	border: 2px solid rgba(32, 86, 172, 0.96);
+	background: white;
+	text-align : left;
+	font-family : cont;
+	font-size: 18px;
+	margin-bottom : 30px;
+}
+
+div.top h3{
+	font-family : head;
+	height : 35px;
+	font-size : 1.5em;
+}
+ 
+#main{
+	width: 300px;
+	margin: 0 auto;
+}
+#main table th{
+	font-family: head;
+	text-align: left;
+}
+
+#main table tr:first-child th{
+	font-size : 1.7em;
+	text-align: center;
+}
+
+#resultshow{
+	height : 600px;
+}
+
+#resultshow table{
+	margin: 0 auto;
+} 
+td{
+	text-align: center;
+}
+.ip{
+	width: 190px;
+	height: 30px;
+	font-size: 15px;
+	padding-right : 10px;
+	text-align: right;
+	font-family : cont;
+}
+#butt{
+	background: #64ABD1 ;
+	border: none;
+	width: 300px;
+	height : 35px;
+	cursor: pointer;
+	color: white;
+	font-family : cont;
+	font-size: 25px;
+}
+
+
+div#resultshow table{
+	font-size : 20px;
+}
+
+div#resultshow table tr th{
+	font-family : head;
+}
+
+div#resultshow table tr td{
+	font-family : cont;
+}
+
+@font-face {
+	font-family: head;
+	src: url(../../font/BMDOHYEON_ttf.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: cont;
+	src: url(../../font/BMJUA_ttf.ttf) format("truetype");
+}
+
+

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: BMJUA;
+    src: url(../../font/BMJUA_ttf.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: BMDOHYEON;
+    src: url(../../font/BMDOHYEON_ttf.ttf) format('truetype');
+}
+h1{
+	font-family: BMJUA;
+	font-size: 50px;
+}
+b{
+	font-family: BMDOHYEON;
+}
+
+img:hover{
+	transition : opacity 0.5s ease;
+	opacity : 0.5;
+	cursor: pointer;
+}
+
+div#wrapper{
+	width : 980px;
+	height : 664px;
+}
+
+div#titlelist{
+	width : 980px;
+	height : 30px;
+	background :  rgba(32, 86, 172, 0.96);
+}
+#overlay1, #overlay2, #overlay3, #overlay4,
+#overlay5, #overlay6, #overlay7, #overlay8{
+    position: fixed;
+    display: none; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    cursor: pointer;
+    margin : 0 auto;
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 15px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}

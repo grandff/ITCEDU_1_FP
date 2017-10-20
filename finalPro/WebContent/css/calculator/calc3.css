@@ -1,0 +1,95 @@
+@font-face{
+    font-family: BMDOHYEON;
+    src: url(../../font/BMDOHYEON_ttf.ttf);
+}
+@font-face{
+    font-family: BMJUA;
+    src: url(../../font/BMJUA_ttf.ttf);
+} 
+
+#wrap{
+    width: 980px;
+    height: 960px;
+    margin: 0 auto;
+}
+
+#explanation{
+    font-family: BMDOHYEON;
+    background : white;
+    border : 2px solid rgba(32, 86, 172, 0.96);
+    height: 135px; 
+    padding-left: 30px; 
+    padding-top : 35px;
+}
+
+div#explanation h3{
+	font-family : BMDOHYEON;
+	height : 35px;
+	font-size : 1.5em;
+}
+
+#explanation p{
+    font-family: BMJUA;
+    text-align: left;
+    font-size: 18px;
+}
+
+table{
+    text-align: center;
+    margin: 0 auto;
+    font-family: BMJUA;
+    font-size: 20px;
+}
+.but{
+    margin: 10px;
+    width: 180px;
+    height: 50px;
+    background: rgba(158, 143, 143, 0.55);
+    border: none;
+    cursor: pointer;
+    font-family: BMJUA;
+    font-size: 20px;
+    color : white;
+}
+#resultshow{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 600px;
+    display: none;
+    font-family: BMJUA;
+}
+input[type="text"]{
+    font-family: BMJUA;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    cursor: pointer;
+    height: 20px;
+    width: 180px;
+}
+#sumbut{
+    background: #64ABD1;
+}
+
+/*툴팁*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

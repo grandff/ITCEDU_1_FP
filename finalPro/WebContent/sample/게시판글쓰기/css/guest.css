@@ -1,0 +1,75 @@
+@font-face {
+    font-family: BMJUA;
+    src: url(./../font/BMJUA_ttf.ttf);
+}
+
+@font-face {
+    font-family: BMDOHYEON;
+    src: url(./../font/BMDOHYEON_ttf.ttf);
+}
+
+#wrapper {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+div#head {
+    width: 960px;
+    padding: 0 10px;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 30px;
+}
+
+div#head label.item {
+    font-family: BMJUA;
+}
+
+div#head select {
+    width: 105px;
+    height: 21px;
+    margin-right: 25px;
+}
+
+div#head input#user {
+    width: 296px;
+    height: 20px;
+    font-size: 15px;
+}
+
+div#head label.item:nth-last-child(4) {
+    margin-left: 35px;
+}
+
+div#head input#user:last-child {
+    width: 876px;
+}
+
+div#body textarea {
+    width: 962px;
+    height: 580px;
+    padding: 10px;
+    border: 2px solid rgba(32, 86, 172, 0.96);
+    resize: none;
+    margin-bottom: 10px;
+}
+
+div#footer {
+    text-align: right;
+}
+
+div#footer input.btn {
+    width: 85px;
+    height: 30px;
+    color: white;
+    background: #64ABD1;
+    border: none;
+    font-family: BMJUA;
+    font-size: 18px;
+    cursor: pointer;
+}

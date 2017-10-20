@@ -1,0 +1,133 @@
+@font-face {
+	font-family: Title;
+	src: url(../../font/BMDOHYEON_ttf.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: else;
+	src: url(../../font/BMJUA_ttf.ttf) format("truetype");
+}
+*{
+	margin : 0;
+	padding : 0;
+}
+
+
+.wrapper {
+	width: 980px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+.explain {
+	padding-left : 30px;
+	padding-top : 20px;
+	height: 150px;
+	line-height: 80px;
+	border: 2px solid rgba(32, 86, 172, 0.96);
+	font-family: "Title";
+	text-align: left;
+	font-size: 18px;
+}
+
+.explain h3{
+	height : 50px;
+	font-size : 1.5em;
+	text-align : left;
+}
+
+
+
+.pfont {
+	font-family: "else";
+}
+
+.mainbord {
+	
+	height: auto;
+	font-size: 20px;
+	text-align: center;
+	border: 2px solid rgba(32, 86, 172, 0.96);
+}
+
+.menu {
+	float: left;
+	width: 298px;
+	height: 43px;
+	line-height: 45px;
+	font-family: "Title";
+	font-size: 20px;
+	border-right: 2px solid rgba(32, 86, 172, 0.96);
+	border-bottom: 2px solid rgba(32, 86, 172, 0.96);
+}
+
+.menucontent {
+	float: left;
+	width: 666px;
+	padding-left : 10px;
+	height: 43px;
+	line-height: 38px;
+	font-family: "else";
+	font-size: 20px;
+	border-bottom: 2px solid rgba(32, 86, 172, 0.96);
+	text-align: left;
+}
+
+.calcontent {
+	float: left;
+	width: 490px;
+	height: auto;
+	border-right: 2px solid rgba(32, 86, 172, 0.96);
+	border-bottom: 2px solid rgba(32, 86, 172, 0.96);
+}
+
+.elsecontent {
+	padding-left : 10px;
+	height: auto;
+	font-size: 20px;
+	text-align: left;
+	font-family: "else";
+}
+
+.click {
+	font-family: "else";
+	font-size: 15px;
+	margin-top: 4px;
+	color : white;
+	background : #64ABD1;
+	border-style : none;
+	width : 74px;
+	height : 34px;
+}
+
+.textbox {
+	height: 30px;
+	text-align: center;
+}
+
+.mousechange {
+	cursor: pointer;
+}
+
+div#resultshow {
+	
+	height : auto;
+	margin-top: 20px;
+	text-align: left;
+}
+
+div#resultshow table {
+	font-family: title;
+	text-align: center;
+	margin: 0 auto;
+	width: 980x;
+	font-size: 20px;
+}
+
+input[type="text"] {
+	font-family: else;
+	margin-top: 4px;
+	text-align: right;
+	height: 30px;
+	width: 180px;
+}

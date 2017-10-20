@@ -1,0 +1,238 @@
+@charset "UTF-8";
+*{
+	margin : 0;
+	padding : 0;
+}
+
+
+div#wrapper{
+	width : 980px;
+	height : 664px;
+}
+
+div#imgslider{
+	position : relative;
+	width : 980px;
+	height : 350px;
+	margin-bottom : 10px;
+}
+
+div#imgslider div.imgcontainer{
+	overflow : hidden;
+	position : absolute;
+	width : 980px;
+	height : 350px;
+	z-index : 5;
+	cursor : pointer;
+}
+
+div#imgslider div.imgcontainer>div{
+	position : absolute;
+	width : 980px;
+	height : 350px;
+	left : 980px;
+	top : 0px;
+}
+
+div#imgslider div.imgcontainer>div div.imgexplain{
+	position : absolute;
+	visibility : hidden;
+	width : 930px;
+	height : 100px;
+	padding : 240px 40px 10px 10px;
+	text-align: right;
+}
+
+div#imgslider div.imgcontainer>div:hover div.imgexplain{
+	visibility: visible;
+	transition : background 0.5s ease;
+	background : rgba(255, 255, 255, 0.5)
+}
+
+div#imgslider div.imgcontainer div#img1{
+	left : 0px;
+	background-image : url('../../img/test1.jpg');
+	background-repeat : no-repeat;
+}
+div#imgslider div.imgcontainer div#img2{
+	background-image : url('../../img/test2.jpg');
+	background-repeat : no-repeat;
+}
+div#imgslider div.imgcontainer div#img3{
+	left : -980px;
+	background-image : url('../../img/test3.jpg');
+	background-repeat : no-repeat;
+}
+
+div#imgslider div#btnbar{
+
+}
+
+div#imgslider div#btnbar div#leftbtn{
+	position : absolute;
+	background-image : url('../../img/left.png');
+	background-repeat : no-repeat;
+	top : 40%;
+	left : 30px;
+	width : 64px;
+	height : 64px;
+	cursor : pointer;
+	opacity : 0;
+	z-index: 10;
+}
+
+div#imgslider div#btnbar div#rightbtn{
+	position : absolute;
+	background-image : url('../../img/right.png');
+	background-repeat : no-repeat;
+	top : 40%;
+	right : 30px;
+	width : 64px;
+	height : 64px;
+	cursor : pointer;
+	opacity : 0;
+	z-index: 10;
+}
+
+div#imgslider div#btnbar div#leftbtn:hover,
+div#imgslider div#btnbar div#rightbtn:hover{
+	transition : opacity 0.5s ease 0s;
+	opacity : 0.6;
+}
+
+div#maincont1{
+	width : 646px;
+	margin-right : 10px;
+	height : 300px;
+	position : relative;
+	float : left;
+	border : 2px solid rgba(32, 86, 172, 0.96);
+}
+
+div#maincont1 ul#contnav{
+	position : relative;
+	float : left;
+	width : 70px;
+	height : 300px;
+	border-right : 2px solid rgba(32, 86, 172, 0.96);
+}
+
+div#maincont1 ul#contnav li{
+	height : 73px;
+	text-align : center;
+	line-height : 73px;
+	border-bottom : 2px solid rgba(32, 86, 172, 0.96);
+} 
+
+/* div#maincont1 ul#contnav li:hover{
+	background : rgba(32, 86, 172, 0.96);
+}
+
+div#maincont1 ul#contnav li:hover>a.navmenu{
+	color : white;
+} */
+
+div#maincont1 ul#contnav li:last-child{
+	height : 75px;
+	text-align : center;
+	line-height : 75px;
+	boder-style : none;
+}
+
+div#maincont1 ul#contnav li a.navmenu{
+	font-family : introcont;
+	color : black;
+}
+
+div#maincont1 ul#contnav li:first-child{
+	background : rgba(32, 86, 172, 0.96);
+}
+
+div#maincont1 ul#contnav li:first-child a.navmenu{
+	color : white;
+}
+
+div#maincont1 div#contView{
+	position : relative;
+	float : left;
+	width : 574px;
+	height : 300px;
+}
+
+div#maincont2{
+	width : 316px;
+	height : 300px;
+	position : relative;
+	float : left;
+	border : 2px solid rgba(32, 86, 172, 0.96);
+	font-family : introcont;
+	text-align : center;
+	color : rgba(32, 86, 172, 0.96);
+}
+
+div#maincont2>div{
+	position : relative;
+	float : left;
+	width : 140px;
+	height : 130px;
+	border-radius: 5px;
+	cursor : pointer;
+	line-height : 130px;
+	font-size: 20px;
+}
+
+div#maincont2 div#cal1{
+	background-image : url('../../img/cal1.jpg');
+	background-repeat: none;
+}
+div#maincont2 div#cal2{
+	background-image : url('../../img/cal2.jpg');
+	background-repeat: none;
+}
+div#maincont2 div#cal3{
+	background-image : url('../../img/cal3.jpg');
+	background-repeat: none;
+}
+div#maincont2 div#cal4{
+	background-image : url('../../img/cal4.jpg');
+	background-repeat: none;
+}
+
+div#maincont2>div:hover p{
+	transition : background-color 0.5s ease;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+div#maincont2>div#cal1:hover p,
+div#maincont2>div#cal2:hover p,
+div#maincont2>div#cal3:hover p,
+div#maincont2>div#cal4:hover p{
+	transition : font-size 0.5s ease;
+	font-size : 1.5em;
+	color : rgba(0,0,0,1);
+}
+
+div#maincont2 div:nth-child(1),
+div#maincont2 div:nth-child(3) {
+	margin : 10px 9px 10px 9px;
+}
+
+div#maincont2 div:nth-child(2),
+div#maincont2 div:nth-child(4) {
+	margin : 10px 9px 10px 9px;
+}
+
+@font-face {
+    font-family: logo;
+    src: url('../../font/logo.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: introHead;
+    src: url('../../font/BMDOHYEON_ttf.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: introcont;
+    src: url('../../font/BMJUA_ttf.ttf') format('truetype');
+}

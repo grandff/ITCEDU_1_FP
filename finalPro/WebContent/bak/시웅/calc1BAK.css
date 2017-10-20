@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: Title;
+	src: url(../../font/BMDOHYEON_ttf.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: else;
+	src: url(../../font/BMJUA_ttf.ttf) format("truetype");
+}
+
+.wrapper {
+	width: 980px;
+	height: auto;
+	margin: auto;
+}
+
+.explain {
+	width: 976px;
+	height: 190px;
+	line-height: 80px;
+	border: 2px solid black;
+	font-family: "Title";
+	text-align: center;
+	font-size: 20px;
+}
+
+.pfont {
+	font-family: "else";
+}
+
+.mainbord {
+	width: 976px;
+	height: auto;
+	font-size: 20px;
+	text-align: center;
+	border: 2px solid black;
+}
+
+.menu {
+	float: left;
+	width: 298px;
+	height: 43px;
+	line-height: 45px;
+	font-family: "Title";
+	font-size: 20px;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.menucontent {
+	float: left;
+	width: 676px;
+	height: 43px;
+	line-height: 38px;
+	font-family: "else";
+	font-size: 20px;
+	border-bottom: 2px solid black;
+}
+
+.calcontent {
+	float: left;
+	width: 490px;
+	height: auto;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.elsecontent {
+	width: 980px;
+	height: auto;
+	font-size: 20px;
+	text-align: center;
+	font-family: "else";
+}
+
+.click {
+	font-family: "else";
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+.textbox {
+	height: 30px;
+	text-align: center;
+}
+
+.mousechange {
+	cursor: pointer;
+}
+
+div#resultshow {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 600px;
+    font-family: BMJUA;
+}
+
+input[type="text"] {
+    font-family: BMJUA;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    cursor: pointer;
+    height: 20px;
+    width: 180px;
+}

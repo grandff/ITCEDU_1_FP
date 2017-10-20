@@ -1,0 +1,56 @@
+form{
+	margin-top: 150px;
+}
+
+div#wrapper{
+	width:980px;
+	height:430px;
+}
+
+div#login_logo{
+	height : 70px;
+	font-family : logo;
+	font-size : 2.8em;
+	text-align: center;
+}
+
+div#loginbar{
+	width : 500px;
+	margin : 0 auto;
+	text-align:center;
+}
+
+div#loginbar input.typingbox{
+	width:400px;
+	height:40px;
+	font-size:30px;
+	text-align: center;
+	margin-top:20px;
+	font-family : cont;
+}
+
+div#btnbar{
+	text-align : center;
+}
+
+div#btnbar input.clickbutton{
+	width:200px;
+	height : 35px;
+	border-style : none;
+	font-size:30px;
+	background : #64ABD1;
+	color : white;
+	margin-top:20px;
+	font-family : cont;
+}
+
+
+@font-face{
+	font-family : logo;
+	src : url('../../font/a파도소리.ttf') format('truetype');
+}
+
+@font-face{
+	font-family : cont;
+	src : url('../../font/BMJUA_ttf.ttf') format('truetype');
+}

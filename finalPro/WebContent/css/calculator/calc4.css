@@ -1,0 +1,496 @@
+input {
+    text-align: right;
+}
+
+#wrapper {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* ============= 계산기 선택 버튼 ============= */
+
+header {
+    position: relative;
+    height: 60px;
+}
+
+header label.label_btn1 {
+    float: left;
+    position: relative;
+    left: 60px;
+    top: 0;
+    width: 110px;
+    height: 40px;
+    margin-top: 10px;
+    line-height: 40px;
+    background-color: #64ABD1;
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: introHead;
+    cursor: pointer;
+    border-radius : 3px;
+}
+
+header label.label_btn2 {
+    float: left;
+    position: relative;
+    left: 80px;
+    top: 0;
+    width: 110px;
+    height: 40px;
+    margin-top: 10px;
+    line-height: 40px;
+    background-color: #64ABD1;
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: introHead;
+    cursor: pointer;
+    border-radius : 3px;
+}
+
+header input {
+    display: none;
+}
+
+header input.input1:checked+label,
+header input.input2:checked+label {
+    background: rgba(32, 86, 172, 0.96);
+}
+
+/* =========================================== */
+
+
+/* ============ DTI/DSR 계산기 ================ */
+
+section {
+    overflow: auto;
+}
+
+section div#newDTI {
+    width: 980px;
+    height: auto;
+    display: block;
+}
+
+section div#DSR {
+    width: 980px;
+    height: auto;
+    display: none;
+}
+
+
+/* =========================================== */
+
+
+/* ========해당 계산기에 대한 설명 부분 =========*/
+
+div.explain {
+    height: 140px;
+    padding-left: 30px;
+    padding-top : 30px;
+    background: white;
+    border : 2px solid  rgba(32, 86, 172, 0.96);
+}
+
+div.explain .headintro {
+    font-family: introHead;
+    font-size: 2.2em;
+}
+
+div.explain .headcont {
+    font-family: introcont;
+    font-size: 18px;
+}
+
+
+/* ==================================== */
+
+
+/* =============계산기 부분================*/
+
+div.calculator {}
+
+
+/*전체 계산기 사이즈 결정*/
+
+div.calculator div.calhead {
+    position: relative;
+    width: 980px;
+    height: 70px;
+}
+
+
+/*연소득, 기타부채, 담보대출 입력창 오픈을 위한 div 설정*/
+
+div.calculator div.calhead div.headname1 {
+    position: relative;
+    float: left;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    margin: 15px 0 15px 50px;
+    line-height: 40px;
+    background: rgba(32, 86, 172, 0.96);
+    color : white;
+    font-family: calhead;
+}
+
+
+/*연소득 제목 디자인 설정*/
+
+div.calculator div.calhead input#DTIinput1,
+div.calculator div.calhead input#DSRinput1 {
+    position: relative;
+    float: left;
+    border-top: 1px solid rgba(32, 86, 172, 0.96);
+    border-bottom: 1px solid rgba(32, 86, 172, 0.96);
+    border-left: none;
+    border-right: none;
+    margin: 15px 0;
+    width: 130px;
+    padding: 10px;
+    height: 18px;
+    font-family: input;
+}
+
+
+/*연소득 입력창 디자인 설정*/
+
+div.calculator div.calhead div.headtext {
+    position: relative;
+    float: left;
+    margin: 15px 0;
+    background: rgba(32, 86, 172, 0.96);
+    color : white;
+    text-align: center;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    font-family: calhead;
+}
+
+
+/*연소득 및 기타부채의 단위 디자인 설정*/
+
+div.calculator div.calhead div.headname2 {
+    position: relative;
+    float: left;
+    width: 140px;
+    text-align: center;
+    margin: 15px 0 15px 180px;
+    height: 40px;
+    line-height: 40px;
+    background: rgba(32, 86, 172, 0.96);
+    color : white;
+    font-family: calhead;
+}
+
+
+/*기타부채 제목 디자인 설정*/
+
+div.calculator div.calhead input#DTIinput2 {
+    position: relative;
+    float: left;
+    border-top: 1px solid rgba(32, 86, 172, 0.96);
+    border-bottom: 1px solid rgba(32, 86, 172, 0.96);
+    border-left: none;
+    border-right: none;
+    margin: 15px 0;
+    width: 130px;
+    padding: 10px;
+    height: 18px;
+    font-family: input;
+}
+
+
+/*기타부채 입력창 디자인 설정*/
+
+div.calculator div.calhead div.headinputopen {
+    position: relative;
+    width: 980px;
+    height: 40px;
+    line-height: 40px;
+    background: rgba(32, 86, 172, 0.96);
+    float: left;
+    text-align: center;
+    color : white;
+    font-family: introhead;
+}
+
+
+/*주택담보대출 입력창여는 버튼 디자인 설정*/
+
+div.calculator div.calinput {
+    position: relative;
+    width : 974px;
+    float: left;
+    height: auto;
+    border-right : 3px solid rgba(32, 86, 172, 0.96);
+    border-left : 3px solid rgba(32, 86, 172, 0.96);
+    border-bottom : 3px solid rgba(32, 86, 172, 0.96);
+}
+
+
+/*주택담보대출 1,2를 담는 div 디자인 설정*/
+
+div.calculator div.calinput div#DTIinput1,
+div.calculator div.calinput div#DTIinput2,
+div.calculator div.calinput div#DSRinput1,
+div.calculator div.calinput div#DSRinput2 {
+    position: relative;
+    float: left;
+    width: 954px;
+    height: 117px;
+    margin: 7px;
+    border-top: none;
+    border-right: 3px solid rgba(32, 86, 172, 0.96);
+    border-left: 3px solid rgba(32, 86, 172, 0.96);
+    border-bottom: 3px solid rgba(32, 86, 172, 0.96);
+    background: white;
+}
+
+
+/*주택담보대출 1,2 디자인 설정*/
+
+div.calculator div.calinput div.inputname {
+    width: 954px;
+    color : white;
+    background: rgba(32, 86, 172, 0.96);
+    font-family: introhead;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+/*주택담보대출 제목 디자인 설정*/
+
+div.calculator div.calinput div.moneyname {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 20px 0 20px 20px;
+    color : white;
+    background: rgba(32, 86, 172, 0.96);
+    font-family: calhead;
+}
+
+
+/*대출금액 제목 디자인 설정*/
+
+div.calculator div.calinput div.datename,
+div.calculator div.calinput div.ratename {
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 20px 0 20px 20px;
+     color : white;
+    background: rgba(32, 86, 172, 0.96);
+    font-family: calhead;
+}
+
+
+/*대출기간 및 대출이율 제목 디자인 설정*/
+
+div.calculator div.calinput div#DTIinput1 input#DTImoney1,
+div.calculator div.calinput div#DTIinput2 input#DTImoney2,
+div.calculator div.calinput div#DSRinput1 input#DSRmoney1,
+div.calculator div.calinput div#DSRinput2 input#DSRmoney2 {
+    position: relative;
+    float: left;
+    border-style: none;
+    margin: 20px 0;
+    width: 100px;
+    padding: 10px;
+    height: 18px;
+    border-top: 1px solid rgba(32, 86, 172, 0.96);;
+    border-bottom: 1px solid rgba(32, 86, 172, 0.96);;
+    border-left: none;
+    border-right: none;
+}
+
+
+/*대출금액 입력창 디자인 설정*/
+
+div.calculator div.calinput div#DTIinput1 input#DTIdate1,
+div.calculator div.calinput div#DTIinput2 input#DTIdate2,
+div.calculator div.calinput div#DSRinput1 input#DSRdate1,
+div.calculator div.calinput div#DSRinput2 input#DSRdate2 {
+    position: relative;
+    float: left;
+    border-style: none;
+    margin: 20px 0;
+    width: 100px;
+    padding: 10px;
+    height: 18px;
+    border-top: 1px solid rgba(32, 86, 172, 0.96);;
+    border-bottom: 1px solid rgba(32, 86, 172, 0.96);;
+    border-left: none;
+    border-right: none;
+}
+
+
+/*대출기간 입력창 디자인 설정*/
+
+div.calculator div.calinput div#DTIinput1 input#DTIrate1,
+div.calculator div.calinput div#DTIinput2 input#DTIrate2,
+div.calculator div.calinput div#DSRinput1 input#DSRrate1,
+div.calculator div.calinput div#DSRinput2 input#DSRrate2 {
+    position: relative;
+    float: left;
+    border-style: none;
+    margin: 20px 0;
+    width: 100px;
+    padding: 10px;
+    height: 18px;
+    border-top: 1px solid rgba(32, 86, 172, 0.96);;
+    border-bottom: 1px solid rgba(32, 86, 172, 0.96);;
+    border-left: none;
+    border-right: none;
+}
+
+
+/*대출이율 입력창 디자인 설정*/
+
+div.calculator div.calinput div.inputtext {
+    position: relative;
+    float: left;
+    margin: 20px 0;
+    width: 54px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color : white;
+    background: rgba(32, 86, 172, 0.96);
+    font-family: calhead;
+}
+
+
+/*주택담보대출 입력 값들의 단위 디자인 설정*/
+
+div.calculator div#buttonbar {
+    position: relative;
+    float: left;
+    width: 980px;
+    height: 50px;
+    text-align: center;
+     color : white;
+    background: rgba(32, 86, 172, 0.96);
+}
+
+
+/*결과와 초기화 버튼이 들어갈 버튼바 디자인 설정*/
+
+div.calculator div#buttonbar button {
+    width: 80px;
+    height: 30px;
+    border-style: none;
+    margin: 10px 25px;
+    cursor: pointer;
+    background: #64ABD1;
+    color : white;
+    font-family: introcont;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+/*결과 및 초기화 버튼 디자인 설정*/
+
+
+/*===============================================*/
+
+
+/*=================주의사항 부분==================*/
+
+div.caution {
+    position: relative;
+    float: left;
+    width: 960px;
+    padding: 10px;
+    height: auto;
+    font-family: introcont;
+    font-size: 1.1em;
+}
+
+
+/*===============================================*/
+
+
+/*============= 결과값 출력 부분 =================*/
+
+div#DTIresult,
+div#DSRresult {
+    position: relative;
+    float: left;
+    width : 980px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+div#DTIresult table,
+div#DSRresult table {
+    text-align: center;
+    margin: 0 auto;
+    width: 980x;
+    font-size: 20px;
+}
+
+div#DTIresult table th,
+td,
+div#DSRresult table th,
+td {}
+
+div#DTIresult table td.tablehead,
+div#DSRresult table td.tablehead {
+    font-family: introhead;
+}
+
+div#DTIresult table tr:first-child th:first-child,
+div#DSRresult table tr:first-child th:first-child {
+    width: 150px;
+}
+
+div#DTIresult table tr:first-child th:nth-child(2),
+div#DSRresult table tr:first-child th:nth-child(2) {
+    width: 160px;
+}
+
+div#DTIresult table tr td.result_money,
+div#DSRresult table tr td.result_money {
+    padding: 10px;
+    font-family: introcont;
+}
+
+
+/*===============================================*/
+
+@font-face {
+    font-family: introHead;
+    src: url('../../font/BMDOHYEON_ttf.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: introcont;
+    src: url('../../font/BMJUA_ttf.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: calhead;
+    src: url('../../font/NanumBarunGothicBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: input;
+    src: url('../../font/NanumGothic.ttf') format('truetype');
+}

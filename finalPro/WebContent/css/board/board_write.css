@@ -1,0 +1,89 @@
+@font-face {
+    font-family: BMJUA;
+    src: url(../../font/BMJUA_ttf.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: BMDOHYEON;
+    src: url(../../font/BMDOHYEON_ttf.ttf) format('truetype');
+}
+
+#wrapper {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+div#head {
+    width: 960px;
+    height : 72px;
+    padding: 0 10px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+div#head label.item {
+	float : left;
+	width : 58px;
+	height : 30px;
+	line-height : 30px;
+    font-family: BMJUA;
+    background : rgba(32, 86, 172, 0.96);
+    color : white;
+    margin-right : 5px;
+    text-align : center;
+}
+
+div#head select {
+	float : left;
+    width: 105px;
+    height: 30px;
+    margin-right: 25px;
+}
+
+div#head input#user {
+    width: 296px;
+    height: 24px;
+    float : left;
+    font-size: 15px;
+}
+
+div#head label.item:nth-last-child(4) {
+    margin-left: 35px;
+}
+
+div#head input#user:nth-last-child(7){
+	margin-right : 40px;
+}
+
+div#head input#user:last-child {
+    width: 893px;
+}
+
+div#body textarea {
+    width: 956px;
+    height: 580px;
+    padding: 10px;
+    border: 2px solid rgba(32, 86, 172, 0.96);
+    resize: none;
+    margin-bottom: 10px;
+}
+
+div#footer {
+    text-align: right;
+}
+
+div#footer input.btn {
+    width: 85px;
+    height: 30px;
+    color: white;
+    background: #64ABD1;
+    border: none;
+    font-family: BMJUA;
+    font-size: 18px;
+    cursor: pointer;
+}

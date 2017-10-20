@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+div#wrapper{
+	width : 980px;
+	height : 664px;
+	margin : 0 auto;
+}
+
+div#titlelist{
+	width : 980px;
+}
+
+div#titlelist div#titlehead{
+	width : 980px;
+	height : 30px;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+div#titlelist div#titlehead div.headname{
+	height : 30px;
+	line-height : 30px;
+	text-align : center;
+	float : left;
+	background :  rgba(32, 86, 172, 0.96);
+	color : white;
+	font-family : BMDOHYEON;
+}
+
+div#titlelist div#titlebody div.contname{
+	height : 30px;
+	line-height : 30px;
+	text-align : center;
+	float : left;
+	color : black;
+	font-family : BMJUA;
+	margin-bottom : 5px;
+}
+
+div#titlelist div#titlebody{
+	height : 34px;
+	border-bottom: 1px solid rgba(32, 86, 172, 0.96);
+}
+
+div#titlelist div#titlehead div.headname:first-child,
+div#titlelist div#titlebody div.contname:first-child{
+	width : 100px;
+	margin-right : 10px;
+}
+
+div#titlelist div#titlehead div.headname:nth-child(2),
+div#titlelist div#titlebody div.contname:nth-child(2) {
+	width : 350px;
+	margin-right : 10px;
+}
+
+div#titlelist div#titlehead div.headname:nth-child(3),
+div#titlelist div#titlebody div.contname:nth-child(3) {
+	width : 190px;
+	margin-right : 10px;
+}
+
+div#titlelist div#titlehead div.headname:last-child,
+div#titlelist div#titlebody div.contname:last-child {
+	width : 310px;
+}
+
+div#titlelist div#titlefooter{
+	margin-top : 10px;
+	text-align: right;
+}
+
+div#titlelist div#titlefooter input.btn{
+	background: #64ABD1;
+	color : white;
+	font-family : BMJUA;
+	border-style: none;
+	width : 70px;
+	height : 30px;
+	font-size: 20px;
+	cursor : pointer;
+}
+
+div#titlelist div#titlefooter input.btn:hover{
+	transition : background 0.5s ease;
+	background : rgba(32, 86, 172, 0.96);
+}
+
+div#titlelist div#titlefooter ul.writenavi{
+	position : relative;
+	left : 350px;
+	padding-left: 0;
+	text-align: center;
+}
+
+div#titlelist div#titlefooter ul.writenavi li{
+	border: 1px solid rgba(32, 86, 172, 0.96);
+    width: 40px;
+    height: 30px;
+    list-style: none;
+    float: left;
+    line-height: 30px;
+    font-family: BMJUA;
+}
+
+div#titlelist div#titlefooter ul.writenavi li a{
+	text-decoration: none;
+	color : black;
+}
+
+div#titlelist div#titlefooter ul.writenavi li:hover {
+    background-color: #64ABD1;
+    color : white;
+    cursor: pointer;
+}
+div#titlelist div#titlefooter ul.writenavi li:hover a{
+    color : white;
+}
+
+@font-face {
+    font-family: BMJUA;
+    src: url(../../font/BMJUA_ttf.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: BMDOHYEON;
+    src: url(../../font/BMDOHYEON_ttf.ttf) format('truetype');
+}

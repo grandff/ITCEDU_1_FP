@@ -1,0 +1,63 @@
+@font-face {
+    font-family: BMDOHYEON;
+    src: url(../../font/BMDOHYEON_ttf.ttf);
+}
+
+@font-face {
+    font-family: BMJUA;
+    src: url(../../font/BMJUA_ttf.ttf);
+}
+
+#wrap {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#explanation {
+    font-family: BMDOHYEON;
+    background-color: rgba(128, 128, 128, 0.3);
+    height: 190px;
+    line-height: 150%;
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    margin: 0 auto;
+    font-family: BMJUA;
+    font-size: 20px;
+}
+
+.but {
+    margin: 10px;
+    width: 180px;
+    height: 50px;
+    background: rgba(158, 143, 143, 0.55);
+    border: none;
+    cursor: pointer;
+    font-family: BMJUA;
+    font-size: 20px;
+}
+
+#resultshow {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 600px;
+    font-family: BMJUA;
+}
+
+input[type="text"] {
+    font-family: BMJUA;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    cursor: pointer;
+    height: 20px;
+    width: 180px;
+}
+
+#sumbut:hover {
+    color: red;
+    background: black;
+}
